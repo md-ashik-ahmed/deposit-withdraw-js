@@ -2,9 +2,9 @@
 
 const loginSubmit = document.getElementById('login-submit');
 
-loginSubmit.addEventListener('submit', function (e) {
+loginSubmit.addEventListener('submit', function (a) {
     //stop whole site reloding for clicking submit button
-    e.preventDefault();
+    a.preventDefault();
 
     // Step-2
     const userName = document.getElementById('userName');
@@ -25,7 +25,8 @@ loginSubmit.addEventListener('submit', function (e) {
 })
 
 // step-1:
-document.getElementById('btn-withdraw').addEventListener('click', function(){
+document.getElementById('btn-withdraw').addEventListener('click', function(a){
+    a.preventDefault()
     // step-2:
     const withdrawField = document.getElementById('withdraw-field');
     const newWithdrawAmountString = withdrawField.value;
